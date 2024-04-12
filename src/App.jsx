@@ -1,11 +1,2 @@
-import React from 'react'
+import React, { useEffect, useReducer } from 'react';
 
-const App = () => {
-  return (
-    <div className='bg-black'>
-      Hi
-    </div>
-  )
-}
-
-export default App
