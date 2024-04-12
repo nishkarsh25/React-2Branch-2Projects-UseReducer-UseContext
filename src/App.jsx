@@ -13,3 +13,13 @@ const paginationReducer = (state, action) => {
   }
 };
 
+export default function TwentyThree() {
+  const [paginationState, dispatch] = useReducer(paginationReducer, {
+    currentPage: 1,
+    totalItems: 0,
+  });
+
+  const data = Array.from({ length: 25 }, (_, index) => `Item ${index + 1}`);
+
+  
+}
