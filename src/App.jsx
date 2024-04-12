@@ -34,5 +34,36 @@ export default function TwentyThree() {
     dispatch({ type: 'SET_CURRENT_PAGE', payload: newPage });
   };
 
-  
+  return (
+    <div className="container mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Pagination Example</h1>
+      <ul>
+        {displayedItems.map((item, index) => (
+          <li key={index} className="py-2">
+            {item}
+          </li>
+        ))}
+      </ul>
+      <div className="mt-4">
+        <button
+          onClick={() => handlePageClick(paginationState.currentPage - 1)}
+          disabled={paginationState.currentPage === 1}
+          className={`px-4 py-2 rounded-md ${
+            paginationState.currentPage === 1 ? 'bg-gray-300 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-700 text-white'
+          }`}
+        >
+          Previous
+        </button>
+        <button
+          onClick={() => handlePageClick(paginationState.currentPage + 1)}
+          disabled={endIndex >= data.length}
+          className={`px-4 py-2 rounded-md ml-2 ${
+            endIndex >= data.length ? 'bg-gray-300 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-700 text-white'
+          }`}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
 }
