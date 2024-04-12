@@ -1,11 +1,4 @@
-import React from 'react'
+import React from 'react';
+import { useCart } from './CartContext';
 
-const App = () => {
-  return (
-    <div className='bg-black'>
-      Hi
-    </div>
-  )
-}
 
-export default App
