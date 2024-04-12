@@ -30,5 +30,9 @@ export default function TwentyThree() {
 
   const displayedItems = data.slice(startIndex, endIndex);
 
+  const handlePageClick = (newPage) => {
+    dispatch({ type: 'SET_CURRENT_PAGE', payload: newPage });
+  };
+
   
 }
