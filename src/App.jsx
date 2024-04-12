@@ -21,5 +21,9 @@ export default function TwentyThree() {
 
   const data = Array.from({ length: 25 }, (_, index) => `Item ${index + 1}`);
 
+  useEffect(() => {
+    dispatch({ type: 'SET_TOTAL_ITEMS', payload: data.length });
+  }, [data]);
+
   
 }
