@@ -12,7 +12,7 @@ Welcome to the Vite + React Pagination Example! This project demonstrates how to
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://paginationproject--shiny-selkie-a93d62.netlify.app/).
+You can try out the live demo of the app [here](https://react-2branch-2projects-usereducer-ctg3.onrender.com).
 
 ## Folder Structure
 
