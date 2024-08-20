@@ -10,7 +10,7 @@ Welcome to the Shopping App! This React application allows users to manage their
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://gorgeous-sawine-6f3e2c.netlify.app/).
+You can try out the live demo of the app [here](https://react-2branch-2projects-usereducer.onrender.com/).
 
 ## Folder Structure
 
